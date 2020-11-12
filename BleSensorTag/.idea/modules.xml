@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BleSensorTag.iml" filepath="$PROJECT_DIR$/.idea/modules/BleSensorTag.iml" group="SensorTag-CC2650/BleSensorTag" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/398611199/SensorTag-CC2650.iml" filepath="$PROJECT_DIR$/.idea/modules/398611199/SensorTag-CC2650.iml" group="SensorTag-CC2650" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SensorTag-CC2650-BleSensorTag.iml" filepath="$PROJECT_DIR$/.idea/modules/SensorTag-CC2650-BleSensorTag.iml" group="SensorTag-CC2650/BleSensorTag" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/398611199/github-SensorTag-CC2650.iml" filepath="$PROJECT_DIR$/.idea/modules/398611199/github-SensorTag-CC2650.iml" group="SensorTag-CC2650" />
     </modules>
   </component>
 </project>

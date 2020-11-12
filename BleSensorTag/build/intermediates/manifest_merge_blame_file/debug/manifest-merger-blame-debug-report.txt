@@ -1,0 +1,164 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ti.ble.sensortag"
+4    android:versionCode="6"
+5    android:versionName="2.3" >
+6
+7    <uses-sdk
+7-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:17:5-47
+8        android:minSdkVersion="22"
+8-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:17:5-47
+9        android:targetSdkVersion="22" />
+9-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:17:15-44
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:7:5-67
+11-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:7:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:8:5-73
+12-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:8:22-71
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:9:5-67
+13-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:9:22-64
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:10:5-80
+14-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:10:22-77
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:9:5-67
+15-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:12:5-68
+16-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:12:22-65
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:13:5-79
+17-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:13:22-76
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:14:5-81
+18-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:14:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:15:5-79
+19-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:15:22-76
+20
+21    <uses-feature
+21-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:19:5-21:35
+22        android:name="android.hardware.bluetooth_le"
+22-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:20:9-53
+23        android:required="true" />
+23-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:21:9-32
+24
+25    <application
+25-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:23:5-77:19
+26        android:name="com.example.ti.ble.sensortag.SensorTagApplicationClass"
+26-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:28:9-78
+27        android:allowBackup="false"
+27-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:24:9-36
+28        android:debuggable="true"
+29        android:icon="@drawable/tible"
+29-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:25:9-39
+30        android:label="@string/app_name"
+30-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:26:9-41
+31        android:testOnly="true"
+32        android:theme="@android:style/Theme.Holo.Light" >
+32-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:27:9-56
+33        <service
+33-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:29:9-31:38
+34            android:name="com.example.ti.ble.common.BluetoothLeService"
+34-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:30:13-72
+35            android:enabled="true" />
+35-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:31:13-35
+36        <service
+36-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:32:9-33:38
+37            android:name="org.eclipse.paho.android.service.MqttService"
+37-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:32:18-77
+38            android:enabled="true" />
+38-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:33:13-35
+39
+40        <activity
+40-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:35:9-45:20
+41            android:name="com.example.ti.ble.sensortag.MainActivity"
+41-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:36:13-69
+42            android:configChanges="orientation|screenSize|keyboardHidden"
+42-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:38:53-114
+43            android:label="@string/app_name"
+43-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:37:13-45
+44            android:screenOrientation="unspecified" >
+44-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:38:13-52
+45            <intent-filter>
+45-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:39:13-44:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:40:17-69
+46-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:40:25-66
+47
+48                <category android:name="android.intent.category.DEFAULT" />
+48-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:42:17-76
+48-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:42:27-73
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:43:17-77
+49-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:43:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:46:9-50:55
+53            android:name="com.example.ti.ble.sensortag.DeviceActivity"
+53-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:47:13-71
+54            android:configChanges="orientation|screenSize|keyboardHidden"
+54-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:49:13-74
+55            android:parentActivityName="com.example.ti.ble.sensortag.MainActivity"
+55-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:48:13-54
+56            android:screenOrientation="unspecified" />
+56-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:50:13-52
+57        <activity
+57-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:51:9-55:54
+58            android:name="com.example.ti.ble.sensortag.FwUpdateActivity"
+58-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:52:13-73
+59            android:configChanges="orientation|screenSize|keyboardHidden"
+59-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:54:13-74
+60            android:parentActivityName="com.example.ti.ble.sensortag.DeviceActivity"
+60-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:53:13-56
+61            android:screenOrientation="unspecified" />
+61-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:55:13-52
+62        <activity
+62-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:56:9-60:54
+63            android:name="com.example.ti.ble.sensortag.FwUpdateActivity_CC26xx"
+63-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:57:13-80
+64            android:configChanges="orientation|screenSize|keyboardHidden"
+64-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:59:13-74
+65            android:parentActivityName="com.example.ti.ble.sensortag.DeviceActivity"
+65-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:58:13-56
+66            android:screenOrientation="unspecified" />
+66-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:60:13-52
+67        <activity
+67-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:61:9-65:55
+68            android:name="com.example.ti.ble.sensortag.FileActivity"
+68-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:62:13-69
+69            android:configChanges="orientation|screenSize|keyboardHidden"
+69-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:64:13-74
+70            android:parentActivityName="com.example.ti.ble.sensortag.FwUpdateActivity"
+70-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:63:13-58
+71            android:screenOrientation="unspecified" />
+71-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:65:13-52
+72        <activity
+72-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:66:9-71:42
+73            android:name="com.example.ti.ble.sensortag.PreferencesActivity"
+73-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:67:13-76
+74            android:configChanges="orientation|screenSize|keyboardHidden"
+74-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:70:13-74
+75            android:label="Preferences"
+75-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:71:13-40
+76            android:parentActivityName="com.example.ti.ble.sensortag.DeviceActivity"
+76-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:68:13-56
+77            android:screenOrientation="unspecified" />
+77-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:69:13-52
+78        <activity
+78-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:72:9-75:54
+79            android:name="com.example.ti.ble.sensortag.fwSelectorView"
+79-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:72:19-77
+80            android:configChanges="orientation|screenSize|keyboardHidden"
+80-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:74:13-74
+81            android:parentActivityName="com.example.ti.ble.sensortag.FwUpdateActivity_CC26xx"
+81-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:73:13-65
+82            android:screenOrientation="unspecified" />
+82-->D:\github\SensorTag-CC2650\BleSensorTag\src\main\AndroidManifest.xml:75:13-52
+83    </application>
+84
+85</manifest>

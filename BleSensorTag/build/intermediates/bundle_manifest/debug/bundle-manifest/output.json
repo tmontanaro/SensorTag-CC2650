@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.example.ti.ble.sensortag",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "BUNDLE_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 6,
+        "versionName": "2.3",
+        "outputFile": "BleSensorTag-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.example.ti.ble.sensortag",
+        "split": "",
+        "minSdkVersion": "22"
+      }
+    }
+  ]
+}
