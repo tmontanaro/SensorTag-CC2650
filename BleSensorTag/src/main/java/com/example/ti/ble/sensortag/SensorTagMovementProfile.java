@@ -129,7 +129,6 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
         byte b[] = new byte[] {0x7F,0x00};
         SensorTagMovementTableRow row = (SensorTagMovementTableRow)this.tRow;
         if (row.WOS.isChecked()) b[0] = (byte)0xFF;
-        /*
         int error = mBTLeService.writeCharacteristic(this.configC, b);
         if (error != 0) {
             if (this.configC != null)
@@ -140,7 +139,7 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
             if (this.dataC != null)
             Log.d("SensorTagMovementProfile","Sensor notification enable failed: " + this.configC.getUuid().toString() + " Error: " + error);
         }
-		*/
+
 		this.periodWasUpdated(1000);
         this.isEnabled = true;
 	}

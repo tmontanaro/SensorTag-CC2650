@@ -123,9 +123,9 @@ public enum Sensor {
 			// Range 8G
 			final float SCALE = (float) 4096.0;
 
-			int x = 0;//(value[7]<<8) + value[6];
-			int y = 0;//(value[9]<<8) + value[8];
-			int z = 0;//(value[11]<<8) + value[10];
+			int x = (value[7]<<8) + value[6];
+			int y = (value[9]<<8) + value[8];
+			int z = (value[11]<<8) + value[10]; 
 			return new Point3D(((x / SCALE) * -1), y / SCALE, ((z / SCALE)*-1));
 		}
 	},
@@ -135,9 +135,9 @@ public enum Sensor {
 
 			final float SCALE = (float) 128.0;
 
-			int x = 0;//(value[1]<<8) + value[0];
-			int y = 0;//(value[3]<<8) + value[2];
-			int z = 0;//(value[5]<<8) + value[4];
+			int x = (value[1]<<8) + value[0];
+			int y = (value[3]<<8) + value[2];
+			int z = (value[5]<<8) + value[4]; 
 			return new Point3D(x / SCALE, y / SCALE, z / SCALE);
 		}
 	},

@@ -197,12 +197,12 @@ public class GenericBluetoothProfile {
 		} else {
 			Log.d("GenericBluetoothProfile","Sensor period failed: " + this.periodC.getUuid().toString());
 		}
+		*/
         int error = mBTLeService.writeCharacteristic(this.periodC, p);
         if (error != 0) {
             if (this.periodC != null)
                 printError("Sensor period failed: ",this.periodC,error);
         }
-		*/
 		this.tRow.periodLegend.setText("Sensor period (currently : " + period + "ms)");
 	}
     public Map<String,String> getMQTTMap() {
