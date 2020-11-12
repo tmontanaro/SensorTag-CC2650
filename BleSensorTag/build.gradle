@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.ti.ble.sensortag"
-        minSdkVersion 27
-        targetSdkVersion 27
+        minSdkVersion 22
+        targetSdkVersion 22
     }
 
     buildTypes {
